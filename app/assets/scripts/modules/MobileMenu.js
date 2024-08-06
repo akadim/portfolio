@@ -15,10 +15,11 @@ class MobileMenu {
       const menuHeight = Array.from(this.menu.children)
         .map(item => item.clientHeight)
         .reduce((a, b) => a + b, 0)
-      console.log('Height = ', menuHeight)
       this.menuContent.style.height = menuHeight + 15 + 'px'
+      this.menu.style.visibility = 'visible'
     } else {
       this.menuContent.style.height = 0
+      setTimeout(() => (this.menu.style.visibility = 'hidden'), 300)
     }
   }
 }

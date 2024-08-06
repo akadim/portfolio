@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+
+  &__link {
+    color: $socialColor;
+  }
+
+  &--lg {
+    font-size: 1.7rem;
+  }
+}

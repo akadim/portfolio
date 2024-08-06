@@ -1,0 +1,7 @@
+.resume-wrapper {
+  padding-top: 0;
+
+  @mixin atLarge {
+    padding-left: 17rem;
+  }
+}

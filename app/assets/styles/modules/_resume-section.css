@@ -1,0 +1,13 @@
+.resume-section {
+  border-bottom: 1px solid $separatorColor;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+  display: flex;
+  align-items: center;
+
+  &--p-left-3 {
+    padding: 3rem;
+  }
+}

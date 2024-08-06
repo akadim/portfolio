@@ -3,3 +3,7 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "modules/_side-nav";
+@import "modules/_resume-wrapper";
+@import "modules/_resume-section";
+@import "modules/_about-me-section";
+@import "modules/_socials";
