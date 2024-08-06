@@ -1,0 +1,159 @@
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  padding: 15px;
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__logo {
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin: auto 0;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+  &__image {
+    display: none;
+  }
+
+  &__hamburger-btn {
+    display: block;
+    cursor: pointer;
+    width: 55px;
+    height: 45px;
+    position: absolute;
+    background-color: transparent;
+    margin-left: auto;
+    border: 1px solid $portfolioWhite;
+    position: relative;
+    border-radius: 5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 35px;
+      height: 3px;
+      background-color: $portfolioWhite;
+      transform-origin: 0 0;
+      transition: transform 0.3s ease-out;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 21px;
+      left: 10px;
+      width: 35px;
+      height: 3px;
+      background-color: $portfolioWhite;
+      transition: all 0.3s ease-out;
+      transform-origin: 0 50%;
+      z-index: 10;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      width: 35px;
+      height: 3px;
+      background-color: #fff;
+      transform-origin: 0 100%;
+      transition: transform 0.3s ease-out;
+    }
+  }
+
+  &__menu-content {
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.5s ease-out;
+    margin-bottom: auto;
+  }
+
+  &__menu {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  &__menu-item {
+    list-style: none;
+  }
+
+  &__menu-link {
+    font-weight: 600;
+    display: block;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+    &.active {
+      color: $portfolioWhite;
+    }
+  }
+
+  &--black {
+    background-color: $portfolioBlack;
+  }
+
+  @mixin atLarge {
+    padding: 0;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+      display: none;
+    }
+
+    &__hamburger-btn {
+      display: none;
+    }
+
+    &__profile {
+      display: flex;
+      margin: 0 auto;
+      flex: 1;
+      align-items: flex-end;
+
+      padding-inline-start: 0.5rem;
+    }
+
+    &__image {
+      display: block;
+      max-width: 10rem;
+      max-height: 10rem;
+      border: 0.5rem solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+    }
+
+    &__menu-content {
+      align-items: flex-start;
+      flex: 1;
+      width: 100%;
+      margin-bottom: auto;
+    }
+  }
+}
