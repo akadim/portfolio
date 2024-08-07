@@ -11,3 +11,6 @@
 @import "modules/_portfolio-item";
 @import "modules/_subheading";
 @import "modules/_portfolio-date";
+@import "modules/_skills";
+@import "modules/_workflow-list";
+@import "modules/_download-btn";

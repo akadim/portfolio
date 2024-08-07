@@ -1,12 +1,5 @@
 .portfolio-section {
   border-bottom: 1px solid $separatorColor;
   min-height: 100vh;
-  padding-top: 5rem;
-  padding-bottom: 15rem;
-  display: flex;
-  align-items: center;
-
-  &--p-left-3 {
-    padding: 3rem;
-  }
+  box-sizing: border-box;
 }

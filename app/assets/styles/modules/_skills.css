@@ -1,0 +1,10 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+
+  .skill {
+    font-size: 3rem;
+    margin-right: 25px;
+  }
+}

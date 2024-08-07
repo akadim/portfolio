@@ -1,5 +1,10 @@
 .portfolio-item {
   display: flex;
+  flex-direction: column;
+
+  @mixin atMedium {
+    flex-direction: row;
+  }
 
   ul {
     color: $subtitleColor;
