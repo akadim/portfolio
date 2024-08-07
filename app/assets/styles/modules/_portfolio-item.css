@@ -1,0 +1,7 @@
+.portfolio-item {
+  display: flex;
+
+  ul {
+    color: $subtitleColor;
+  }
+}

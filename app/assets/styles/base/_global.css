@@ -6,10 +6,38 @@ body {
   font-family: "Roboto", "sans-serif";
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
 
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Saira Extra Condensed", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $titleColor;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  color: $subtitleColor;
 }
