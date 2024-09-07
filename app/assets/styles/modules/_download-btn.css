@@ -1,0 +1,16 @@
+.download-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: $portfolioWhite;
+  background-color: $mainGreen;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  margin-left: 0;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    border: 1px solid $mainGreen;
+    background-color: transparent;
+    color: $mainGreen;
+  }
+}

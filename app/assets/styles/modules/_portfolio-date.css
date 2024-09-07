@@ -1,4 +1,10 @@
 .portfolio-date {
+  color: $mainGreen;
+  flex: 1;
   min-width: 18rem;
-  text-align: right;
+  text-align: left;
+
+  @mixin atMedium {
+    text-align: right;
+  }
 }
